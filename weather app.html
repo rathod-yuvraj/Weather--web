@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather web</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div class="container">
+        <div class="date-time" id="dateTime"></div>
+        <div class="top-bar">
+            <input type="text" class="cityInput" placeholder="Search">
+            <div class="search-icon" onclick="search()">
+                <img src="search.png" alt="search">
+            </div>
+        </div>
+        <div class="weather-image">
+            <img src="cloud.png" alt="" id="weatherIcon">
+            
+        </div>
+        <div class="weather-temp" id="weatherTemp">24°C</div>
+        <div class="temp-buttons">
+            <select name="temp-list" onchange="toggleTemperature(this.value)">
+                <option value="C">Celsius</option>
+                <option value="K">Kelvin</option>
+                <option value="F">Fahrenheit</option>
+            </select>
+            
+        </div>
+        <div class="weather-location" id="weatherLocation">London</div>
+        <div class="data-container">
+            <div class="element">
+                <img src="humidity.png" alt="" class="icon">
+                <div class="data">
+                    <div class="humidity-percent" id="humidityPercent">64%</div>
+                    <div class="text">Humidity</div>
+                </div>
+            </div>
+            <div class="element">
+                <img src="wind.png" alt="" class="icon">
+                <div class="data">
+                    <div class="wind-rate" id="windRate">18 km/h</div>
+                    <div class="text">Wind Speed</div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <script src="script.js">
+        </script>
+</body>
+</html>
