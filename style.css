@@ -136,3 +136,28 @@
 .weather-temp.cold {
     background-color: #4682b4; /* SteelBlue */
 }
+
+/* Temperature unit selector styles */
+.temp-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.temp-buttons select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.temp-buttons select:focus {
+    outline: none;
+    border-color: #007bff; /* Change to your desired focus color */
+}
+
+.temp-buttons select option {
+    background-color: #fff;
+    color: #333;
+}
